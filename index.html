@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-      <div class="mb-10">
-      <button onclick="document.getElementById('bgmusic').play()" class="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-full shadow transition">
-        Включить музыку 🎵
-      </button>
-      
-      <audio id="bgmusic" loop>
-        <source src="s.mp3" type="audio/mpeg">
-        Ваш браузер не поддерживает аудио.
-      </audio>
-    </div>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приглашение на свадьбу</title>
@@ -45,9 +35,47 @@
       max-width: 400px;        
       margin: 0 auto;            
     }
+        
+  .music-button {
+      position: fixed;   
+      top: 20px;          
+      left: 20px;       
+      background-color: #ff7b7b; 
+      color: white;    
+      border: none;       
+      padding: 15px 25px; 
+      font-size: 16px;   
+      border-radius: 25px; 
+      cursor: pointer;   
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
 
+    #music-button:hover {
+      background-color: #ff4b4b;
+    }
+    
   </style>
 </head>
+        <button id="music-button" onclick="toggleMusic()">Включить музыку 🎵</button>
+
+  <audio id="background-music" loop>
+    <source src="s.mp3" type="audio/mp3">
+    Ваш браузер не поддерживает аудио.
+  </audio>
+
+  <script>
+    function toggleMusic() {
+      var audio = document.getElementById("background-music");
+      if (audio.paused) {
+        audio.play();
+        document.getElementById("music-button").innerText = "Выключить музыку";
+      } else {
+        audio.pause();
+        document.getElementById("music-button").innerText = "Включить музыку 🎵";
+      }
+    }
+  </script>
 <body class="bg-pink-50 text-gray-800">
       
 <div class="flex flex-col items-center justify-center mb-10 text-center">
