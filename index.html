@@ -88,6 +88,38 @@
       С любовью, <span class="fancy-title">Артем и Дашуля 💕</span>
     </footer>
   </div>
+      
+  <div class="carousel-container my-10">
+    <h3 class="text-4xl font-bold text-pink-600 text-center mb-6">Наши фотографии</h3>
 
+    <div class="carousel">
+      <div><img src="1.jpg" alt="Мы" class="rounded-lg shadow-lg" /></div>
+      <div><img src="2.jpg" alt="Мы" class="rounded-lg shadow-lg" /></div>
+      <div><img src="3.jpg" alt="Мы" class="rounded-lg shadow-lg" /></div>
+      <div><img src="4.jpg" alt="Мы" class="rounded-lg shadow-lg" /></div>
+      <div><img src="5.jpg" alt="Мы" class="rounded-lg shadow-lg" /></div>
+      <div><img src="6.jpg" alt="Мы" class="rounded-lg shadow-lg" /></div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500, 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+    });
+  </script>
 </body>
 </html>
