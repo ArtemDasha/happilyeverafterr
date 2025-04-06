@@ -79,6 +79,19 @@
       flex-direction: column;
       gap: 10px;
     }
+
+    .frame {
+      background-color: #f9e0e6; /* Нежно-розовый цвет */
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .frame h3, .frame h4 {
+      margin-bottom: 10px;
+      color: #d1006c;
+    }
   </style>
 </head>
 <body class="bg-pink-50 text-gray-800">
@@ -125,8 +138,8 @@
         <p class="text-lg mb-2">📅 5 июля 2025 </p>
       </div>
 
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold text-pink-600 mb-2 fancy-title bg-white rounded-2xl shadow-md p-4">Программа дня</h3>
+      <div class="frame">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2 fancy-title">Программа дня</h3>
         <ul class="text-left list-disc list-inside">
           <li>10:00 — Взаимное награждение свадебными кольцами 💍</li>
           <li>13:00 — Фуршет 🍸</li>
@@ -139,23 +152,23 @@
 
       <div class="flex flex-col md:flex-row justify-between mb-6 gap-6">
         <div class="w-full md:w-1/2">
-          <h4 class="text-lg font-semibold mb-2 fancy-title bg-white rounded-2xl shadow-md p-4">ЗАГС Петроградского района</h4>
-          <p class="mb-4 text-lg">Санкт-Петербург, Большая Монетная ул., 17-19</p>
-          <div class="rounded-xl overflow-hidden shadow-lg mb-4">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85ac35d37eac6e87ef0ee871505ba7261e4de6802fee4db4b5c2ef7bf3a5e97&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
-          </div>
-          <div class="map-buttons-container">
+          <div class="frame">
+            <h4 class="text-lg font-semibold mb-2">ЗАГС Петроградского района</h4>
+            <p class="mb-4 text-lg">Санкт-Петербург, Большая Монетная ул., 17-19</p>
+            <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85ac35d37eac6e87ef0ee871505ba7261e4de6802fee4db4b5c2ef7bf3a5e97&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+            </div>
             <a href="https://yandex.ru/maps/?um=constructor%3Ae85ac35d37eac6e87ef0ee871505ba7261e4de6802fee4db4b5c2ef7bf3a5e97&source=constructorLink" class="map-button" target="_blank">Открыть на Яндекс Картах</a>
           </div>
         </div>
 
         <div class="w-full md:w-1/2">
-          <h4 class="text-lg font-semibold mb-2 fancy-title bg-white rounded-2xl shadow-md p-4">Банкет: Банкетный зал "Праздник"</h4>
-          <p class="mb-4 text-lg">Санкт-Петербург, просп. Юрия Гагарина, 14к1</p>
-          <div class="rounded-xl overflow-hidden shadow-lg mb-4">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b4442cee172a858fbdc8662233fa9b625756a6a33f027fa49ac0703037fc624&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
-          </div>
-          <div class="map-buttons-container">
+          <div class="frame">
+            <h4 class="text-lg font-semibold mb-2">Банкет: Банкетный зал "Праздник"</h4>
+            <p class="mb-4 text-lg">Санкт-Петербург, просп. Юрия Гагарина, 14к1</p>
+            <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b4442cee172a858fbdc8662233fa9b625756a6a33f027fa49ac0703037fc624&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+            </div>
             <a href="https://yandex.ru/maps/?um=constructor%3Ae85ac35d37eac6e87ef0ee871505ba7261e4de6802fee4db4b5c2ef7bf3a5e97&source=constructorLink" class="map-button" target="_blank">Открыть на Яндекс Картах</a>
           </div>
         </div>
@@ -196,4 +209,3 @@
     });
   </script>
 </body>
-</html>
