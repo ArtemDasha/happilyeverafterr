@@ -6,6 +6,7 @@
   <title>Приглашение на свадьбу</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital@1&display=swap&subset=cyrillic" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -91,6 +92,12 @@
       margin-bottom: 10px;
       color: #d1006c;
     }
+
+    .title-background {
+      background: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+      padding: 15px;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body class="bg-pink-50 text-gray-800">
@@ -119,22 +126,22 @@
       button.style.top = 20 + scrollY + "px";
     };
   </script>
-
   <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover" style="z-index: -1;">
     <source src="ss.mp4" type="video/mp4">
     Ваш браузер не поддерживает видео фон.
   </video>
-
   <div class="max-w-screen-md mx-auto px-4 pt-52 pb-6">
     <div class="flex flex-col items-center justify-center mb-10 text-center">
       <div class="mb-4">
         <img src="s2.png" class="mx-auto w-40 h-30 object-contain" />
       </div>
 
-      <h1 class="text-4xl md:text-5xl font-bold text-pink-700 mb-4 fancy-title">Мы женимся !</h1>
+      <div class="title-background">
+        <h1 class="text-4xl md:text-5xl font-bold text-pink-700 mb-4 fancy-title">Мы женимся !</h1>
+      </div>
       <p class="text-xl mb-8">С любовью приглашаем Вас на нашу свадебку !</p>
 
-      <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+      <div class="bg-[#f8c8d4] rounded-2xl shadow-md p-6 mb-8"> <!-- Бледно-розовая рамка -->
         <h2 class="text-2xl font-semibold text-pink-600 mb-2 fancy-title">Артем & Дашуля</h2>
         <p class="text-lg mb-2">📅 5 июля 2025 </p>
       </div>
@@ -175,7 +182,6 @@
         </div>
       </div>
 
-      <!-- Исправленная карусель -->
       <div class="carousel-container my-10 max-w-screen-md mx-auto px-4">
         <h3 class="text-4xl font-bold text-pink-600 text-center mb-6"><span class="fancy-title">Такие мы милые</span></h3>
         <div class="carousel">
