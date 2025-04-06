@@ -37,39 +37,36 @@
     }
         
      #music-button {
-      position: absolute;    /* Позиционируем кнопку */
-      top: 20px;             /* Отступ сверху */
-      left: 20px;            /* Отступ слева */
-      background: linear-gradient(45deg, #ff7b7b, #ff4b4b); /* Градиентный фон */
-      color: white;         /* Белый цвет текста */
-      border: 2px solid #ff7b7b; /* Розовая граница */
-      padding: 15px 30px;   /* Размеры кнопки */
-      font-size: 18px;      /* Размер шрифта */
-      font-weight: bold;    /* Жирный шрифт */
-      border-radius: 50px;  /* Скругленные углы */
-      cursor: pointer;     /* Курсор в виде руки */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Тень */
-      transition: transform 0.3s, box-shadow 0.3s, background 0.3s, border 0.3s; /* Плавные анимации */
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: linear-gradient(45deg, #ff7b7b, #ff4b4b);
+      color: white;
+      border: 2px solid #ff7b7b;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s, border 0.3s; 
     }
 
-    /* Эффект при наведении */
     #music-button:hover {
-      background: linear-gradient(45deg, #ff4b4b, #ff7b7b); /* Изменение градиента при наведении */
-      transform: translateY(-4px);  /* Легкое поднятие кнопки */
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
-      border-color: #ff4b4b; /* Розовая граница меняется при наведении */
+      background: linear-gradient(45deg, #ff4b4b, #ff7b7b); 
+      transform: translateY(-4px); 
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+      border-color: #ff4b4b; 
     }
 
-    /* Эффект при нажатии */
     #music-button:active {
-      transform: translateY(2px); /* Подсвечиваем эффект нажатия */
+      transform: translateY(2px); 
     }
 
-    /* Дополнительные стили для остальной страницы */
     .container {
       padding: 20px;
       text-align: center;
-      height: 1500px; /* Просто для того, чтобы был скролл */
+      height: 1500px;
     }
 
     .content {
@@ -96,6 +93,11 @@
         document.getElementById("music-button").innerText = "Включить музыку 🎵";
       }
     }
+     window.onscroll = function() {
+      var button = document.getElementById("music-button");
+      var scrollY = window.scrollY || window.pageYOffset;
+      button.style.top = 20 + scrollY + "px";
+    };
   </script>
 <body class="bg-pink-50 text-gray-800">
       
