@@ -6,7 +6,6 @@
   <title>Приглашение на свадьбу</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital@1&display=swap&subset=cyrillic" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -120,10 +119,12 @@
       button.style.top = 20 + scrollY + "px";
     };
   </script>
-<video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover" style="z-index: -1;">
-  <source src="ss.mp4" type="video/mp4">
-  Ваш браузер не поддерживает видео фон.
-</video>
+
+  <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover" style="z-index: -1;">
+    <source src="ss.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео фон.
+  </video>
+
   <div class="max-w-screen-md mx-auto px-4 pt-52 pb-6">
     <div class="flex flex-col items-center justify-center mb-10 text-center">
       <div class="mb-4">
@@ -174,6 +175,7 @@
         </div>
       </div>
 
+      <!-- Исправленная карусель -->
       <div class="carousel-container my-10 max-w-screen-md mx-auto px-4">
         <h3 class="text-4xl font-bold text-pink-600 text-center mb-6"><span class="fancy-title">Такие мы милые</span></h3>
         <div class="carousel">
@@ -182,7 +184,7 @@
           <div><img src="3.jpg" alt="Мы" /></div>
           <div><img src="4.jpg" alt="Мы" /></div>
           <div><img src="5.jpg" alt="Мы" /></div>
-          <div><img src="6.jpg" alt="Мы" /></div><div>
+          <div><img src="6.jpg" alt="Мы" /></div>
           <div><img src="7.jpg" alt="Мы" /></div>
           <div><img src="8.jpg" alt="Мы" /></div>
           <div><img src="9.jpg" alt="Мы" /></div>
@@ -214,3 +216,4 @@
     });
   </script>
 </body>
+</html>
